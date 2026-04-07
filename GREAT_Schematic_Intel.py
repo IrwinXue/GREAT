@@ -316,3 +316,13 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+# === Cloud fix: persistent download button ===
+if 'last_excel_bytes' in st.session_state:
+    st.download_button(
+        '⬇️ 下載最後一次產生的 Excel',
+        data=st.session_state['last_excel_bytes'],
+        file_name='GREAT_Schematic_Intel_Last.xlsx',
+        mime='application/vnd.ms-excel',
+        use_container_width=True,
+    )
