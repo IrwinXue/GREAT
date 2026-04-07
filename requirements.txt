@@ -1,4 +1,7 @@
 streamlit
-matplotlib
+openpyxl
+pandas
+PyMuPDF
+pillow
 numpy
-Pillow
+opencv-python
